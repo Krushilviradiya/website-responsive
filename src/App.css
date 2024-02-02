@@ -1,0 +1,223 @@
+/********** Template CSS **********/
+
+/*** Navbar ***/
+.navbar .dropdown-toggle::after {
+    border: none;
+    /* content: "\f107"; */
+    /* font-family: "Font Awesome 5 Free"; */
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(rgba(255, 255, 255, 0.848));
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-light .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light a.btn {
+    height: 75px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(relative);
+    font-weight: 500;
+}
+
+.navbar-light.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+/*** Facts ***/
+.fact {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)) !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*** Team ***/
+.team-item .team-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(162, 21, 223);
+    transform: scale(0);
+    transition: .5s;
+}
+.team-item .img
+{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.team-item:hover .team-overlay {
+    transform: scale(1);
+}
+
+.team-item .team-overlay .btn {
+    color: #e32828;
+    background: #FFFFFF;
+}
+
+.team-item .team-overlay .btn:hover {
+    color: #e32828;
+    background: var(--secondary)
+}
+
+
+/*** Testimonial ***/
+.testimonial-carousel
+.testimonial-carousel .testimonial-text * {
+    transition: .5s;
+}
+
+.testimonial-carousel  .testimonial-text {
+    background: var(--primary) !important;
+}
+
+.testimonial-carousel .testimonial-text * {
+    color: #e02727 !important;
+}
+
+.testimonial-carousel {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel  {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #e92222;
+    transition: .5s;
+}
+
+.testimonial-carousel  {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+
+
+ /*** Footer ***/
+ .footer {
+     background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),;
+     background-size: cover;
+ }
+ 
+ .footer .btn.btn-social {
+     margin-right: 5px;
+     width: 35px;
+     height: 35px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--light);
+     border: 1px solid #FFFFFF;
+     border-radius: 35px;
+     transition: .3s;
+ }
+ 
+ .footer .btn.btn-social:hover {
+     color: var(--primary);
+ }
+ 
+ .footer .btn.btn-link {
+     display: block;
+     margin-bottom: 5px;
+     padding: 0;
+     text-align: left;
+     color: #FFFFFF;
+     font-size: 15px;
+     font-weight: normal;
+     text-transform: capitalize;
+     transition: .3s;
+ }
+ 
+ .footer .btn.btn-link::before {
+     position: relative;
+     content: "\f105";
+     font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+     margin-right: 10px;
+ }
+ 
+ .footer .btn.btn-link:hover {
+     letter-spacing: 1px;
+     box-shadow: none;
+ }
+ 
+ .footer .copyright {
+     padding: 25px 0;
+     font-size: 15px;
+     border-top: 1px solid rgba(256, 256, 256, .1);
+ }
+ 
+ .footer .copyright a {
+     color: var(--light);
+ }
+ 
+ .footer .footer-menu a {
+     margin-right: 15px;
+     padding-right: 15px;
+     border-right: 1px solid rgba(255, 255, 255, .3);
+ }
+ 
+ .footer .footer-menu a:last-child {
+     margin-right: 0;
+     padding-right: 0;
+     border-right: none;
+ }
